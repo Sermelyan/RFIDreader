@@ -44,7 +44,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -54,21 +54,38 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EQJNDAII
 
+[Document2]
+DocumentPath=ИУ4.11.03.03.20.63.13.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=EYTKMLJT
+
 [Parameter1]
-Name=GlobalProjectRevision
-Value=0
+Name=GlobalOrganizationName
+Value=МГТУ имени Н. Э. Баумана
 
 [Parameter2]
-Name=GlobalProjectNumber
-Value=ИУ4.11.03.03.20.63.13
-
-[Parameter3]
 Name=GlobalProjectName
 Value=Устройство чтения RFID карт
 
+[Parameter3]
+Name=GlobalProjectNumber
+Value=ИУ4.11.03.03.20.63.13
+
 [Parameter4]
-Name=GlobalOrganizationName
-Value=МГТУ имени Н. Э. Баумана
+Name=GlobalProjectRevision
+Value=0
 
 [Configuration1]
 Name=Sources
