@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: E:\семья\Школа\СЕР\RFIDreader\Hardware\ИУ4.11.03.03.20.63.13.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.36
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.87
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=3.94
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
