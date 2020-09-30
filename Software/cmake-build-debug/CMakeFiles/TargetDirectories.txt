@@ -1,0 +1,3 @@
+/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/Software.elf.dir
+/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/edit_cache.dir

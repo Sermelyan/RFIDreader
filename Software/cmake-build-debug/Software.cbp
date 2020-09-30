@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Software"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ser/RFIDreader/Software/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ser/RFIDreader/Software/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Software.elf">
+				<Option output="/home/ser/RFIDreader/Software/cmake-build-debug/Software.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ser/RFIDreader/Software/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="/home/ser/RFIDreader/Software/USB_DEVICE/App"/>
+					<Add directory="/home/ser/RFIDreader/Software/USB_DEVICE/Target"/>
+					<Add directory="/home/ser/RFIDreader/Software/Core/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 Software.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Software.elf/fast">
+				<Option output="/home/ser/RFIDreader/Software/cmake-build-debug/Software.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ser/RFIDreader/Software/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="/home/ser/RFIDreader/Software/USB_DEVICE/App"/>
+					<Add directory="/home/ser/RFIDreader/Software/USB_DEVICE/Target"/>
+					<Add directory="/home/ser/RFIDreader/Software/Core/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 Software.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ser/RFIDreader/Software/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ser/RFIDreader/Software/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Inc/main.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Inc/stm32f1xx_it.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Src/main.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Src/stm32f1xx_it.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Src/syscalls.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Core/Src/system_stm32f1xx.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/App/usb_device.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/App/usb_device.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/App/usbd_cdc_if.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/App/usbd_cdc_if.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/App/usbd_desc.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/App/usbd_desc.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/Target/usbd_conf.c">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/USB_DEVICE/Target/usbd_conf.h">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/startup/startup_stm32f103xb.s">
+			<Option target="Software.elf"/>
+		</Unit>
+		<Unit filename="/home/ser/RFIDreader/Software/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

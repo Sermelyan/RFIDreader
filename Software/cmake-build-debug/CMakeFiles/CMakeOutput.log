@@ -1,0 +1,494 @@
+The target system is: Generic - 1 - 
+The host system is: Linux - 5.8.12-arch1-1 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/arm-none-eabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/arm-none-eabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-none-eabi-gcc (Arch Repository) 10.2.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_27cb6/fast && /usr/bin/make -f CMakeFiles/cmTC_27cb6.dir/build.make CMakeFiles/cmTC_27cb6.dir/build
+make[1]: Entering directory '/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj
+/usr/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -v -o CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj   -c /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 10.2.0 (Arch Repository) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/lib/gcc/arm-none-eabi/10.2.0/cc1 -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -D__USES_INITFINI__ /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj -g -std=gnu99 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /tmp/ccJSHCJG.s
+GNU C99 (Arch Repository) version 10.2.0 (arm-none-eabi)
+	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+warning: MPFR header version 4.0.2 differs from library version 4.1.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/usr/arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/arm-none-eabi/include/newlib-nano
+ /usr/lib/gcc/arm-none-eabi/10.2.0/include
+ /usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include
+End of search list.
+GNU C99 (Arch Repository) version 10.2.0 (arm-none-eabi)
+	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+warning: MPFR header version 4.0.2 differs from library version 4.1.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 5e2331d4a1f73ac6264add0113d3651c
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj /tmp/ccJSHCJG.s
+GNU assembler version 2.35 (arm-none-eabi) using BFD version (GNU Binutils) 2.35
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+Linking C executable cmTC_27cb6
+/home/ser/JetBrains/Clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27cb6.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld -v CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj  -o cmTC_27cb6 
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 10.2.0 (Arch Repository) 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-T' '/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld' '-v' '-o' 'cmTC_27cb6' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/lib/gcc/arm-none-eabi/10.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmVVvR5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/arm-none-eabi -X -o cmTC_27cb6 /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crti.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtbegin.o /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0 -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtend.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtn.o -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld
+/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+Memory region         Used Size  Region Size  %age Used
+             RAM:        3104 B        20 KB     15.16%
+           FLASH:          96 B        64 KB      0.15%
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-T' '/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld' '-v' '-o' 'cmTC_27cb6' '-mfloat-abi=soft' '-march=armv7-m'
+make[1]: Leaving directory '/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/arm-none-eabi/include/newlib-nano]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/include]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [/usr/arm-none-eabi/include/newlib-nano] ==> [/usr/arm-none-eabi/include/newlib-nano]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/include] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0/include]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include] ==> [/usr/arm-none-eabi/include]
+  implicit include dirs: [/usr/arm-none-eabi/include/newlib-nano;/usr/lib/gcc/arm-none-eabi/10.2.0/include;/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed;/usr/arm-none-eabi/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_27cb6/fast && /usr/bin/make -f CMakeFiles/cmTC_27cb6.dir/build.make CMakeFiles/cmTC_27cb6.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -v -o CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj   -c /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-gcc]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 10.2.0 (Arch Repository) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/cc1 -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -D__USES_INITFINI__ /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj -g -std=gnu99 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /tmp/ccJSHCJG.s]
+  ignore line: [GNU C99 (Arch Repository) version 10.2.0 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.2 differs from library version 4.1.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/arm-none-eabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/arm-none-eabi/include/newlib-nano]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/include]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C99 (Arch Repository) version 10.2.0 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.2 differs from library version 4.1.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 5e2331d4a1f73ac6264add0113d3651c]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj /tmp/ccJSHCJG.s]
+  ignore line: [GNU assembler version 2.35 (arm-none-eabi) using BFD version (GNU Binutils) 2.35]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [Linking C executable cmTC_27cb6]
+  ignore line: [/home/ser/JetBrains/Clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27cb6.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld -v CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj  -o cmTC_27cb6 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 10.2.0 (Arch Repository) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-T' '/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld' '-v' '-o' 'cmTC_27cb6' '-mfloat-abi=soft' '-march=armv7-m']
+  link line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmVVvR5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/arm-none-eabi -X -o cmTC_27cb6 /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crti.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtbegin.o /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0 -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtend.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtn.o -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld]
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccmVVvR5.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lg_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [--sysroot=/usr/arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_27cb6] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtbegin.o] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp]
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0]
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib]
+    arg [-L/usr/arm-none-eabi/lib] ==> dir [/usr/arm-none-eabi/lib]
+    arg [-gc-sections] ==> ignore
+    arg [--print-memory-usage] ==> ignore
+    arg [CMakeFiles/cmTC_27cb6.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lg_nano] ==> lib [g_nano]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtn.o] ==> ignore
+    arg [-T] ==> ignore
+    arg [/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld] ==> ignore
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp]
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0]
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib] ==> [/usr/arm-none-eabi/lib]
+  collapse library dir [/usr/arm-none-eabi/lib] ==> [/usr/arm-none-eabi/lib]
+  implicit libs: [gcc;g_nano;c_nano;gcc;c_nano;nosys;gcc;c_nano;nosys]
+  implicit dirs: [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp;/usr/arm-none-eabi/lib/thumb/v7-m/nofp;/usr/lib/gcc/arm-none-eabi/10.2.0;/usr/arm-none-eabi/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eb957/fast && /usr/bin/make -f CMakeFiles/cmTC_eb957.dir/build.make CMakeFiles/cmTC_eb957.dir/build
+make[1]: Entering directory '/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -v -o CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj -c /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-g++
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 10.2.0 (Arch Repository) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/lib/gcc/arm-none-eabi/10.2.0/cc1plus -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -D__USES_INITFINI__ /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj -g -std=c++11 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /tmp/ccfs3PRx.s
+GNU C++11 (Arch Repository) version 10.2.0 (arm-none-eabi)
+	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+warning: MPFR header version 4.0.2 differs from library version 4.1.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/usr/arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/arm-none-eabi/include/newlib-nano
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/arm-none-eabi/thumb/v7-m/nofp
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/backward
+ /usr/lib/gcc/arm-none-eabi/10.2.0/include
+ /usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include
+End of search list.
+GNU C++11 (Arch Repository) version 10.2.0 (arm-none-eabi)
+	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+warning: MPFR header version 4.0.2 differs from library version 4.1.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 38c7a6c7cc6125453a429785a0230cd0
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccfs3PRx.s
+GNU assembler version 2.35 (arm-none-eabi) using BFD version (GNU Binutils) 2.35
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+Linking CXX executable cmTC_eb957
+/home/ser/JetBrains/Clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb957.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld -v CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_eb957 
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 10.2.0 (Arch Repository) 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-T' '/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld' '-v' '-o' 'cmTC_eb957' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/lib/gcc/arm-none-eabi/10.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxl39OT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/arm-none-eabi -X -o cmTC_eb957 /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crti.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtbegin.o /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0 -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++_nano -lm --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtend.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtn.o -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld
+/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+Memory region         Used Size  Region Size  %age Used
+             RAM:        3104 B        20 KB     15.16%
+           FLASH:          96 B        64 KB      0.15%
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-T' '/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld' '-v' '-o' 'cmTC_eb957' '-mfloat-abi=soft' '-march=armv7-m'
+make[1]: Leaving directory '/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/arm-none-eabi/include/newlib-nano]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/arm-none-eabi/thumb/v7-m/nofp]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/backward]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/include]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed]
+    add: [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [/usr/arm-none-eabi/include/newlib-nano] ==> [/usr/arm-none-eabi/include/newlib-nano]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0] ==> [/usr/arm-none-eabi/include/c++/10.2.0]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/arm-none-eabi/thumb/v7-m/nofp] ==> [/usr/arm-none-eabi/include/c++/10.2.0/arm-none-eabi/thumb/v7-m/nofp]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/backward] ==> [/usr/arm-none-eabi/include/c++/10.2.0/backward]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/include] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0/include]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed]
+  collapse include dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include] ==> [/usr/arm-none-eabi/include]
+  implicit include dirs: [/usr/arm-none-eabi/include/newlib-nano;/usr/arm-none-eabi/include/c++/10.2.0;/usr/arm-none-eabi/include/c++/10.2.0/arm-none-eabi/thumb/v7-m/nofp;/usr/arm-none-eabi/include/c++/10.2.0/backward;/usr/lib/gcc/arm-none-eabi/10.2.0/include;/usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed;/usr/arm-none-eabi/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_eb957/fast && /usr/bin/make -f CMakeFiles/cmTC_eb957.dir/build.make CMakeFiles/cmTC_eb957.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ser/RFIDreader/Software/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -v -o CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj -c /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-g++]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 10.2.0 (Arch Repository) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/cc1plus -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -D__USES_INITFINI__ /home/ser/JetBrains/Clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj -g -std=c++11 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /tmp/ccfs3PRx.s]
+  ignore line: [GNU C++11 (Arch Repository) version 10.2.0 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.2 differs from library version 4.1.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/arm-none-eabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/arm-none-eabi/include/newlib-nano]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/arm-none-eabi/thumb/v7-m/nofp]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include/c++/10.2.0/backward]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/include]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/include-fixed]
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++11 (Arch Repository) version 10.2.0 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 10.1.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.0.2 differs from library version 4.1.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 38c7a6c7cc6125453a429785a0230cd0]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccfs3PRx.s]
+  ignore line: [GNU assembler version 2.35 (arm-none-eabi) using BFD version (GNU Binutils) 2.35]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [Linking CXX executable cmTC_eb957]
+  ignore line: [/home/ser/JetBrains/Clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb957.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld -v CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_eb957 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /build/arm-none-eabi-gcc/src/gcc-10.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 10.2.0 (Arch Repository) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/lib/gcc/arm-none-eabi/10.2.0/:/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-T' '/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld' '-v' '-o' 'cmTC_eb957' '-mfloat-abi=soft' '-march=armv7-m']
+  link line: [ /usr/lib/gcc/arm-none-eabi/10.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/10.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxl39OT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/arm-none-eabi -X -o cmTC_eb957 /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crti.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtbegin.o /usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/lib/gcc/arm-none-eabi/10.2.0 -L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++_nano -lm --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtend.o /usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtn.o -T /home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld]
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-none-eabi/10.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccxl39OT.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lg_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [--sysroot=/usr/arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_eb957] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtbegin.o] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp]
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0]
+    arg [-L/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib] ==> dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib]
+    arg [-L/usr/arm-none-eabi/lib] ==> dir [/usr/arm-none-eabi/lib]
+    arg [-gc-sections] ==> ignore
+    arg [--print-memory-usage] ==> ignore
+    arg [CMakeFiles/cmTC_eb957.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lstdc++_nano] ==> lib [stdc++_nano]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lg_nano] ==> lib [g_nano]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp/crtn.o] ==> ignore
+    arg [-T] ==> ignore
+    arg [/home/ser/RFIDreader/Software/STM32F103C8Tx_FLASH.ld] ==> ignore
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp]
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0] ==> [/usr/lib/gcc/arm-none-eabi/10.2.0]
+  collapse library dir [/usr/lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib] ==> [/usr/arm-none-eabi/lib]
+  collapse library dir [/usr/arm-none-eabi/lib] ==> [/usr/arm-none-eabi/lib]
+  implicit libs: [stdc++_nano;m;gcc;g_nano;c_nano;gcc;c_nano;nosys;gcc;c_nano;nosys]
+  implicit dirs: [/usr/lib/gcc/arm-none-eabi/10.2.0/thumb/v7-m/nofp;/usr/arm-none-eabi/lib/thumb/v7-m/nofp;/usr/lib/gcc/arm-none-eabi/10.2.0;/usr/arm-none-eabi/lib]
+  implicit fwks: []
+
+
