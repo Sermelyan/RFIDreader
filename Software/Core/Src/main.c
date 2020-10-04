@@ -24,6 +24,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "rc522.h"
+#include "usbd_cdc_if.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +60,20 @@ static void MX_SPI1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint8_t blockAddr;
+uint8_t RC_size;
 
+uint8_t sectorKeyA[16][16] = {{0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+                              {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+                              {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+                              {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},};
+
+uint8_t status;
+uint8_t	str[MFRC522_MAX_LEN];
+uint8_t sn[4];
+char	buff[64];
+uint8_t i;
+uint8_t size;
 /* USER CODE END 0 */
 
 /**
@@ -91,13 +107,78 @@ int main(void)
   MX_SPI1_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
+  MFRC522_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+//      MFRC522_Init();
+      size = sprintf(buff, "\033[H\033[2J");
+      CDC_Transmit_FS(buff, size);
+
+      HAL_Delay(20);
+
+      status = MI_ERR;
+
+      // Look for the card, return type
+      status = MFRC522_Request(PICC_REQIDL, str);
+      if (status == MI_OK) {
+          size = sprintf(buff, "SAK: 0x%02X, 0x%02X\n", str[1], str[0]);
+          CDC_Transmit_FS(buff, size);
+          HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
+      }
+      else {
+          size = sprintf(buff, "SAK: ----  ----\n");
+          CDC_Transmit_FS(buff, size);
+      }
+
+      // Anti-collision, return the card's 4-byte serial number
+      status = MFRC522_Anticoll(sn);
+      if (status == MI_OK) {
+          size = sprintf(buff, "CN: %x%x%x%x\n", sn[0],sn[1],sn[2],sn[3]);
+          CDC_Transmit_FS(buff, size);
+      }
+      else {
+          size = sprintf(buff, "CN: --------\n");
+          CDC_Transmit_FS(buff, size);
+      }
+
+      // Election card, return capacity
+      RC_size = MFRC522_SelectTag(sn);
+      if (RC_size != 0) {
+          size = sprintf(buff, "CS: %d\n", RC_size);
+          CDC_Transmit_FS(buff, size);
+      }
+      else {
+          size = sprintf(buff, "CS: -\n");
+          CDC_Transmit_FS(buff, size);
+      }
+
+      // Card reader
+      status = MFRC522_Auth(PICC_AUTHENT1A, 11, sectorKeyA[2], sn);
+      if (status == MI_OK) {
+          // Read data
+          status = MFRC522_Read(11, str);
+          if (status == MI_OK) {
+              size = sprintf(buff, "%02X %02X %02X %02X %02X %02X %02X %02X\n", str[0],str[1],str[2],str[3],str[4],str[5],str[6],str[7]);
+              CDC_Transmit_FS(buff, size);
+              size = sprintf(buff, "%02X %02X %02X %02X %02X %02X %02X %02X\n", str[8],str[9],str[10],str[11],str[12],str[13],str[14],str[15]);
+              CDC_Transmit_FS(buff, size);
+          }
+          HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
+      }
+      else {
+          size = sprintf(buff, "-- -- -- -- -- -- -- --\n");
+          CDC_Transmit_FS(buff, size);
+      }
+
+      HAL_Delay(2);
+
+      MFRC522_Halt();
+      HAL_Delay(200);
+//      MFRC522_AntennaOff();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -172,7 +253,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
   hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
@@ -198,12 +279,33 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PC13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PA4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PB6 */
   GPIO_InitStruct.Pin = GPIO_PIN_6;
